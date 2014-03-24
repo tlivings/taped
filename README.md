@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tlivings/taped.png)](https://travis-ci.org/tlivings/taped) [![NPM version](https://badge.fury.io/js/taped.png)](http://badge.fury.io/js/taped)
+
 # Taped
 
 Adds easy to use life-cycle functions for [tape](https://github.com/substack/tape) tests.
