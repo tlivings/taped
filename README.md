@@ -1,6 +1,6 @@
 # Taped
 
-Adds easier life-cycle functions around tape tests.
+Adds easy to use life-cycle functions for [tape](https://github.com/substack/tape) tests.
 
 ### Usage
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-//Copied from tape.
+//Copied from tape (https://github.com/substack/tape).
 
 var path = require('path');
 var glob = require('glob');
