@@ -29,5 +29,6 @@
         "lint" : "jshint -c .jshintrc index.js lib/"
     },
     "main" : "./lib/index",
+    "bin": "./bin/tape",
     "readme" : "README.md"
 }
