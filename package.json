@@ -1,0 +1,33 @@
+{
+    "name" : "taped",
+    "description" : "Adds easier life-cycle to tape tests.",
+    "version" : "0.1.0",
+    "author" : "Trevor Livingston <tlivings@gmail.com>",
+    "contributors" : [],
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/tlivings/taped.git"
+    },
+    "bugs" : "http://github.com/tlivings/taped/issues",
+    "publishConfig" : {
+        "registry" : "https://registry.npmjs.org"
+    },
+    "engines" : {
+        "node" : "~0.10.22"
+    },
+    "dependencies" : {
+        "tape" : "^2.11.0",
+        "glob": "^3.2.9"
+    },
+    "devDependencies" : {
+        "istanbul" : "^0.2.3",
+        "jshint" : "^2.4.1"
+    },
+    "scripts" : {
+        "test" : "tape test/*.js",
+        "cover" : "istanbul cover tape -- test/*.js",
+        "lint" : "jshint -c .jshintrc index.js lib/"
+    },
+    "main" : "./lib/index",
+    "readme" : "README.md"
+}
