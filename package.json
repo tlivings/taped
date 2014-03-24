@@ -1,7 +1,7 @@
 {
     "name" : "taped",
     "description" : "Adds easier life-cycle to tape tests.",
-    "version" : "1.0.1",
+    "version" : "1.0.2",
     "author" : "Trevor Livingston <tlivings@gmail.com>",
     "contributors" : [],
     "repository" : {
@@ -29,6 +29,5 @@
         "lint" : "jshint -c .jshintrc index.js lib/"
     },
     "main" : "./lib/index",
-    "bin": "./bin/tape",
-    "readme" : "README.md"
+    "bin": "./bin/tape"
 }
