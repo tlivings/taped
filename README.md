@@ -11,21 +11,21 @@ var test = require('taped');
 
 test('taped', {
     before: function (t, next) {
-        //Do something
+        //t is 'taped' test.
         next();
     },
     after: function (t) {
-        //Do something
+        //t is 'taped' test.
     }
 }, function (t) {
 
     t.test('test', {
        before: function (t, next) {
-           //Do something
+           //t is 'test' test.
            next();
        },
        after: function (t) {
-           //Do something
+           //t is 'test' test.
        }
    }, function (t) {
         t.pass('everything ran.');
