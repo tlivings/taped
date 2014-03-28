@@ -10,22 +10,20 @@ Adds easy to use life-cycle functions for [tape](https://github.com/substack/tap
 var test = require('taped');
 
 test('taped', {
-    before: function (t, next) {
-        //t is 'taped' test.
-        next();
+    before: function (t) {
+        t.end();
     },
     after: function (t) {
-        //t is 'taped' test.
+        //Cleanup
     }
 }, function (t) {
 
     t.test('test', {
-       before: function (t, next) {
-           //t is 'test' test.
-           next();
+       before: function (t) {
+           t.end();
        },
-       after: function (t) {
-           //t is 'test' test.
+       after: function () {
+           //Cleanup
        }
    }, function (t) {
         t.pass('everything ran.');
