@@ -3,7 +3,6 @@
     "description" : "Adds easier life-cycle to tape tests.",
     "version" : "1.0.6",
     "author" : "Trevor Livingston <tlivings@gmail.com>",
-    "contributors" : [],
     "repository" : {
         "type" : "git",
         "url" : "git://github.com/tlivings/taped.git"
@@ -20,7 +19,7 @@
         "glob": "^3.2.9"
     },
     "devDependencies" : {
-        "istanbul" : "^0.2.3",
+        "istanbul" : "~0.2.3",
         "jshint" : "^2.4.1"
     },
     "scripts" : {
@@ -29,5 +28,5 @@
         "lint" : "jshint -c .jshintrc index.js lib/"
     },
     "main" : "./lib/index",
-    "bin": "./bin/tape"
+    "bin": "./bin/taped"
 }
