@@ -1,7 +1,7 @@
 {
     "name" : "taped",
     "description" : "Adds easier life-cycle to tape tests.",
-    "version" : "1.0.7",
+    "version" : "1.0.8",
     "author" : "Trevor Livingston <tlivings@gmail.com>",
     "repository" : {
         "type" : "git",

@@ -4,42 +4,40 @@ var test = require('../lib'),
     http = require('http');
 
 var count = 0;
-var afterCalled = false;
 
-test('test', {
+test('suite', {
     before: function (t) {
-        count++;
         t.plan(1);
-        t.equal(t.name, 'test.before', 'named test.before.');
+        count++;
+        t.equal(t.name, 'suite.before', 'named suite.before.');
     },
     after: function () {
-        afterCalled = true;
+        count--;
     }
 }, function (t) {
 
-    t.test('plan1', {
+    t.test('test', {
         before: function (t) {
-            count++;
             t.plan(1);
-            t.equal(t.name, 'plan1.before', 'named plan1.before.');
+            count++;
+            t.equal(t.name, 'test.before', 'named test.before.');
         },
         after: function () {
-            count = 0;
+            count--;
         }
     }, function (t) {
         t.plan(1);
-        t.equal(count, 2, 'called before and plan1.before.');
+        t.equal(count, 2, 'called suite.before and test.before.');
     });
 
-    t.test('plan2', function (t) {
-        t.plan(2);
-        t.equal(count, 0, 'plan1.after was called.');
-        t.pass('ran without hooks.');
+    t.test('check after', function (t) {
+        t.plan(1);
+        t.equal(count, 1, 'test.after was called.');
     });
 
 });
 
 test('check after', function (t) {
     t.plan(1);
-    t.ok(afterCalled, 'test.after was called.');
+    t.equal(count, 0, 'suite.after was called.');
 });
