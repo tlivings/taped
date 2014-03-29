@@ -1,6 +1,6 @@
 {
     "name" : "taped",
-    "description" : "Adds easier life-cycle to tape tests.",
+    "description" : "Adds easy to use life-cycle functions for tape tests.",
     "version" : "1.0.9",
     "author" : "Trevor Livingston <tlivings@gmail.com>",
     "repository" : {
