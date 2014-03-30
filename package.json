@@ -16,7 +16,7 @@
     },
     "dependencies" : {
         "tape" : "^2.11.0",
-        "glob": "^3.2.9"
+        "glob" : "^3.2.9"
     },
     "devDependencies" : {
         "istanbul" : "~0.2.3",
@@ -28,5 +28,12 @@
         "lint" : "jshint -c .jshintrc index.js lib/"
     },
     "main" : "./lib/index",
-    "bin": "./bin/taped"
+    "bin" : "./bin/taped",
+    "keywords" : [
+        "test",
+        "tape",
+        "before",
+        "after",
+        "lifecycle"
+    ]
 }
